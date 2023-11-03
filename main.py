@@ -5,8 +5,8 @@ app = Flask(__name)
 contacts = []
 
 @app.route("/")
-     def hello_world():
-         return "<h1>Hello World!</h1>"
+def hello_world():
+    return "<h1>Hello World!</h1>"
 
 @app.route('/contacts/create', methods=['POST'])
 def create_contact():
