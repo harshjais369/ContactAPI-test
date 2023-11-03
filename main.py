@@ -25,7 +25,7 @@ def create_contact():
         }
         return jsonify(response), 400
 
-@app.route('/contacts', methods=['POST'])
+@app.route('/contacts', methods=['GET'])
 def get_contacts():
     response = {
         'status': 'success',
